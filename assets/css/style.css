@@ -1,5 +1,6 @@
 @import url(./sections/header.css);
 @import url(./sections/hero.css);
+@import url(./sections/service.css);
 
 /* #CUSTOM-PROPERTY */
 
@@ -251,4 +252,15 @@ body {
   100% {
     transform: translateY(10px);
   }
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.btn-link {
+  font-family: var(--ff-chakra-petch);
+  text-transform: uppercase;
+  color: var(--international-orange-engineering);
+  font-weight: var(--fw-700);
 }
