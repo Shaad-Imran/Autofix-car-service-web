@@ -1,3 +1,5 @@
+@import url(./sections/header.css);
+
 /* #CUSTOM-PROPERTY */
 
 :root {
@@ -108,4 +110,23 @@ html {
   font-family: var(--ff-mulish);
   font-size: 10px;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--sonic-silver);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border: 5px solid rebeccapurple;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+/* ....... #RESUED-STYLE  */
+
+.container {
+  padding-inline: 16px;
+  border: 3px solid yellowgreen;
 }
