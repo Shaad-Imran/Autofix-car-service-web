@@ -1,6 +1,7 @@
 @import url(./sections/header.css);
 @import url(./sections/hero.css);
 @import url(./sections/service.css);
+@import url(./sections/about.css);
 
 /* #CUSTOM-PROPERTY */
 
@@ -190,7 +191,8 @@ body {
 
 .h1,
 .h2,
-.h3 {
+.h3,
+.display-1 {
   font-family: var(--ff-chakra-petch);
   font-weight: var(--fw-700);
   text-transform: uppercase;
@@ -216,6 +218,10 @@ body {
 
 .h3 {
   font-size: var(--fs-4);
+}
+
+.display-1 {
+  font-size: var(--fs-1);
 }
 
 .btn {
