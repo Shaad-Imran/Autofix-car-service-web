@@ -35,3 +35,21 @@
   width: 90%;
   z-index: -1;
 }
+
+/* #MEDIA QUERIES  */
+
+/* responsive for large than 575px screen  */
+@media (min-width: 575px) {
+  .hero .container {
+    max-width: unset;
+  }
+
+  .hero-content {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .hero .section-text {
+    font-size: 1.8rem;
+  }
+}

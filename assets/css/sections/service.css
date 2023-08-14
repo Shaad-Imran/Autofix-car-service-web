@@ -25,3 +25,20 @@
 .service .btn {
   margin-inline: auto;
 }
+
+/* #MEDIA QUERIES  */
+
+/* responsive for large than 575px screen  */
+
+@media (min-width: 575px) {
+  .service .section-title {
+    margin-block-end: 30px;
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-block-end: 40px;
+  }
+}
