@@ -44,3 +44,13 @@
   place-items: center;
   border-radius: var(--radius-circle);
 }
+
+/* responsive for large than 1200px screen  */
+
+@media (min-width: 1200px) {
+  .work-card .card-btn {
+    font-size: 2.4rem;
+    width: 55px;
+    height: 55px;
+  }
+}

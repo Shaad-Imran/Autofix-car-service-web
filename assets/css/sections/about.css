@@ -53,3 +53,82 @@
     padding-block: 20px;
   }
 }
+
+/* responsive for large than 768px screen  */
+
+@media (min-width: 768px) {
+  .about-banner {
+    max-width: max-content;
+  }
+
+  .about-banner,
+  .about .section-text {
+    margin-inline: auto;
+  }
+
+  .about .section-text {
+    max-width: 520px;
+  }
+}
+
+/* responsive for large than 992px screen  */
+
+@media (min-width: 992px) {
+  .about {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about,
+  .about .section-title {
+    text-align: left;
+  }
+
+  .about .container {
+    grid-template-columns: 1fr 0.75fr;
+    gap: 30px;
+  }
+
+  .about .section-subtitle {
+    margin-inline: 0;
+  }
+
+  .about-banner,
+  .about-banner .w-100 {
+    margin-inline: auto 0;
+  }
+
+  .about-banner .w-100 {
+    width: 40%;
+  }
+
+  .about-item {
+    text-align: center;
+  }
+
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../images/about-abs-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    z-index: -1;
+  }
+}
+
+/* responsive for large than 1400px screen  */
+
+@media (min-width: 1400px) {
+  .about::before {
+    width: 55%;
+  }
+
+  .about-banner .w-100 {
+    width: 50%;
+  }
+}

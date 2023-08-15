@@ -9,7 +9,6 @@
   width: 100%;
   padding: 40px 15px;
   padding-inline-start: 40px;
-  border: 3px solid orange;
   z-index: 5;
 }
 
@@ -17,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(170, 170, 255);
 }
 
 .logo img {
@@ -27,7 +25,7 @@
 .nav-toggle-icon {
   width: 30px;
   height: 2px;
-  background-color: orange;
+  background-color: var(--white);
   transition: var(--transition);
 }
 
@@ -80,4 +78,81 @@
 .navbar-link:is(:hover, :focus-visible) {
   background-color: var(--white);
   color: var(--international-orange-engineering);
+}
+
+/* responsive for large than 992px screen  */
+
+@media (min-width: 992px) {
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .header .container {
+    gap: 30px;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: block;
+    margin-inline-start: auto;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+
+  .navbar-link {
+    position: relative;
+    font-size: unset;
+  }
+
+  .navbar-link:is(:hover, :focus-visible) {
+    background: none;
+    color: var(--white);
+  }
+
+  .navbar-link::after {
+    content: url("../../images/nav-before-img.png");
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  .navbar-link:is(:hover, :focus-visible)::after {
+    opacity: 1;
+  }
+
+  .header .btn {
+    display: flex;
+    padding: 12px 24px;
+    font-size: var(--fs-5);
+  }
+}
+
+/* responsive for large than 1200px screen  */
+
+@media (min-width: 1200px) {
+  .header {
+    padding-block: 25px;
+  }
+
+  .logo img {
+    width: 128px;
+  }
+
+  .header .btn {
+    font-size: unset;
+    padding-block: 15px;
+  }
+}
+
+/* responsive for large than 1400px screen  */
+
+@media (min-width: 1400px) {
+  .header .btn {
+    padding: 18px 36px;
+  }
 }
